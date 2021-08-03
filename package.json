@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "dist": "cp src/index.js dist/intercom-facade.min.js && npx uglifyjs dist/intercom-facade.min.js -o dist/intercom-facade.min.js --mangle --comments /^!/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/danielbachhuber/intercom-facade/issues"
   },
-  "homepage": "https://github.com/danielbachhuber/intercom-facade#readme"
+  "homepage": "https://github.com/danielbachhuber/intercom-facade#readme",
+  "devDependencies": {
+    "uglify-js": "^3.14.1"
+  }
 }
