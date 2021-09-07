@@ -172,4 +172,12 @@
   });
   wrapper.append(region);
   document.querySelector('body').append(wrapper);
+  if (typeof settings.custom_launcher_selector !== 'undefined') {
+    document.querySelectorAll(settings.custom_launcher_selector).forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        loadChat(true);
+      })
+    });
+  }
 }(window.intercomSettings))
