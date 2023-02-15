@@ -65,8 +65,8 @@
   }
   var logoHtml = `
 <svg
-  height="32px"
-  width="28px"
+  height="24px"
+  width="22px"
   focusable="false"
   aria-hidden="true"
   viewBox="0 0 28 32">
@@ -90,13 +90,13 @@
     transition: 'transform 0.16s linear 0s, opacity 0.08s linear 0s'
   }, null, logoHtml);
   var closeHtml = `
-<svg focusable="false" viewBox="0 0 16 14" width="28" height="25" style="width: 16px;">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path
-    fill="rgb(255, 255, 255)"
-    fillRule="evenodd"
-    clipRule="evenodd"
-    d="M.116 4.884l1.768-1.768L8 9.232l6.116-6.116 1.768 1.768L8 12.768.116 4.884z"
-  />
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    fill="white"
+    d="M18.601 8.39897C18.269 8.06702 17.7309 8.06702 17.3989 8.39897L12 13.7979L6.60099 8.39897C6.26904 8.06702 5.73086 8.06702 5.39891 8.39897C5.06696 8.73091 5.06696 9.2691 5.39891 9.60105L11.3989 15.601C11.7309 15.933 12.269 15.933 12.601 15.601L18.601 9.60105C18.9329 9.2691 18.9329 8.73091 18.601 8.39897Z">
+  </path>
 </svg>
 `;
   var close = buildElement({
@@ -117,8 +117,8 @@
     position: 'absolute',
     top: '0px',
     left: '0px',
-    width: '60px',
-    height: '60px',
+    width: '48px',
+    height: '48px',
     borderRadius: '50%',
     cursor: 'pointer',
     transformOrigin: 'center',
@@ -159,8 +159,8 @@
     bottom: '20px',
     display: 'block',
     right: '20px',
-    width: '60px',
-    height: '60px',
+    width: '48px',
+    height: '48px',
     borderRadius: '50%',
     boxShadow:
       'rgba(0, 0, 0, 0.0588235) 0px 1px 6px 0px, rgba(0, 0, 0, 0.156863) 0px 2px 32px 0px',
